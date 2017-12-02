@@ -1,2 +1,2 @@
-# mad-sneaker-bot
-Sneaker Bot in Python
+# mad-game-site
+Game Website
