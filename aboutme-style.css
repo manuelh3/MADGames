@@ -1,0 +1,50 @@
+#heading {
+	font-size: 100px;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	background-color: rgb(128,128,128);
+}
+
+#Manuel {
+	font-weight: Arial;
+	font-size: 20px;
+	text-align: left;
+	
+}
+
+#ManuelPho {
+	position: relative;
+	left = 20px;
+	vertical-align:top;
+	display: inline-block;
+	
+}
+
+#Dylan {
+	font-weight: Arial;
+	font-size: 20px;
+	text-align: left;
+	
+}
+
+#DylanPho {
+	position: relative;
+	left = 20px;
+	vertical-align:top;
+	display: inline-block;
+}
+
+#Aneesh {
+	font-weight: Arial;
+	font-size: 20px;
+	text-align: left;
+	
+}
+
+#AneeshPho{
+	position: relative;
+	left = 20px;
+	vertical-align:top;
+	display: inline-block;
+}
