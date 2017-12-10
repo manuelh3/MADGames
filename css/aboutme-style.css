@@ -15,7 +15,7 @@
 
 #ManuelPho {
 	position: relative;
-	left: 20px;
+	left = 20px;
 	vertical-align:top;
 	display: inline-block;
 	
@@ -30,7 +30,7 @@
 
 #DylanPho {
 	position: relative;
-	left: 20px;
+	left = 20px;
 	vertical-align:top;
 	display: inline-block;
 }
@@ -44,7 +44,7 @@
 
 #AneeshPho{
 	position: relative;
-	left: 20px;
+	left = 20px;
 	vertical-align:top;
 	display: inline-block;
 }
