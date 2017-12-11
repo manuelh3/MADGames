@@ -1,0 +1,107 @@
+@supports (grid-area: auto) {
+	body {
+		background-color: rgb(94, 93, 93);
+		display: grid;
+		grid-template-columns: 500px 500px;
+        grid-template-rows: 200px 50px 100px 200px 50px 300px;
+        justify-content: center;
+        grid-template-areas: 
+            "title title"
+            "tab ."
+            "dots ."
+            "dotspho dotspho"
+            "howto ."
+            "play play";
+            
+    }
+    #madgames {
+		grid-area: title;
+		background-color: rgb(138, 76, 236);
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+		border-radius: 25px;
+	}
+	
+	#madgames h1 {
+		font-size: 100px;
+		font-family: Aleo;
+		font-weight: bold;
+		color: white;
+		
+    }
+
+    #tabs {
+        grid-area: tab;
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-areas: 
+            "about game"
+    }
+
+    #about-me {
+        grid-area: about;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #about-me a {
+        color: Black;
+    }
+
+    #game-bruh {
+        grid-area: game;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #dot {
+        grid-area: dots;
+        background-color: rgb(0, 0, 0);
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #dot h1{
+        font-size: 50px;
+		font-family: Aleo;
+		font-weight: bold;
+		color: white;
+    }
+    #directions {
+        grid-area: howto;
+        background-color: rgb(0, 0, 0);
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    #directions h1 {
+        font-size: 50px;
+		font-family: Aleo;
+		font-weight: bold;
+		color: white; 
+    }
+    #howtoplay {
+        grid-area: play;
+        background-color: rgb(0, 0, 0);
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    #howtoplay p{
+        font-size: 25px;
+		font-family: Aleo;
+		font-weight: bold;
+		color: white; 
+    }
+}
