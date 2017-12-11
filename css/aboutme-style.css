@@ -51,8 +51,17 @@
 
 @supports (grid-area: auto) {
 	body {
-		display: grid;
 		background-color: rgb(43, 43, 43);
+		display: grid;
+		grid-template-columns: 1fr 1000px 1fr;
+		grid-template-areas: 
+			". main .";	
+	}
+
+	body .main {
+		grid-area: main;
+		background-color: rgb(150, 150, 150);
+		display: grid;
 		grid-template-columns: 250px 750px;
 		grid-template-rows: 200px 50px repeat(3, 10px 50px 400px);
 		justify-content: center;
@@ -99,6 +108,13 @@
 
 	#ManuelPara {
 		grid-area: ManuelPara;
+	}
+
+	#ManuelPara p {
+		color: white;	
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
 	}
 	
 	#Dylan {
