@@ -1,57 +1,7 @@
-/* #heading {
-	font-size: 100px;
-	text-align: center;
-	font-family: Arial;
-	font-weight: bold;
-	background-color: rgb(128,128,128);
-}
-
-#Manuel {
-	font-weight: Arial;
-	font-size: 20px;
-	text-align: left;
-	
-}
-
-#ManuelPho {
-	position: relative;
-	left: 20px;
-	vertical-align:top;
-	display: inline-block;
-	
-}
-
-#Dylan {
-	font-weight: Arial;
-	font-size: 20px;
-	text-align: left;
-	
-}
-
-#DylanPho {
-	position: relative;
-	left: 20px;
-	vertical-align:top;
-	display: inline-block;
-}
-
-#Aneesh {
-	font-weight: Arial;
-	font-size: 20px;
-	text-align: left;
-	
-}
-
-#AneeshPho{
-	position: relative;
-	left: 20px;
-	vertical-align:top;
-	display: inline-block;
-} */
 
 @supports (grid-area: auto) {
 	body {
-		background-color: rgb(43, 43, 43);
+		background-color: rgb(56, 56, 56);
 		display: grid;
 		grid-template-columns: 1fr 1000px 1fr;
 		grid-template-areas: 
@@ -60,23 +10,22 @@
 
 	body .main {
 		grid-area: main;
-		background-color: rgb(150, 150, 150);
 		display: grid;
-		grid-template-columns: 250px 750px;
-		grid-template-rows: 200px 50px repeat(3, 10px 50px 400px);
+		grid-template-columns: 250px 25px 725px;
+		grid-template-rows: 200px 50px repeat(3, 10px 50px 300px);
 		justify-content: center;
 		grid-template-areas: 
-			"head head"
-			". ."
-			". ."
-			"Manuel Manuel"
-			"ManuelPho ManuelPara"
-			". ."
-			"Dylan Dylan"
-			"DylanPho DylanPara"
-			". ."
-			"Aneesh Aneesh"
-			"AneeshPho AneeshPara";
+			"head head head"
+			". . ."
+			". . ."
+			"Manuel Manuel Manuel"
+			"ManuelPho . ManuelPara"
+			". . ."
+			"Dylan Dylan Dylan"
+			"DylanPho . DylanPara"
+			". . ."
+			"Aneesh Aneesh Aneesh"
+			"AneeshPho . AneeshPara";
 	}
 
 	#heading {
@@ -97,17 +46,32 @@
 	}
 	
 	#Manuel {
+		color: white;	
 		grid-area: Manuel;
-		
+		display: flex;
+		align-self: center;
+		justify-content: center;
 	}
 	
 	#ManuelPho {
 		grid-area: ManuelPho;
-		
+		display: flex;
+		align-self: center;
+		justify-content: center;
+	}
+	
+	#ManuelPho img {
+		object-fit: cover;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
 	}
 
 	#ManuelPara {
 		grid-area: ManuelPara;
+		display: flex;
+		align-self: center;
+		justify-content: center;
 	}
 
 	#ManuelPara p {
@@ -118,29 +82,64 @@
 	}
 	
 	#Dylan {
+		color: white;	
 		grid-area: Dylan;
-		
+		display: flex;
+		align-self: center;
+		justify-content: center;
 	}
 	
 	#DylanPho {
 		grid-area: DylanPho;
+		display: flex;
+		align-self: center;
+		justify-content: center;
+	}
+	
+	#DylanPho img {
+		object-fit: cover;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
 	}
 
 	#DylanPara {
+		color: white;	
 		grid-area: DylanPara;
+		display: flex;
+		align-self: center;
+		justify-content: center;
 	}
 	
 	#Aneesh {
+		color: white;	
 		grid-area: Aneesh;
-		
+		display: flex;
+		align-self: center;
+		justify-content: center;
 	}
 	
 	#AneeshPho{
 		grid-area: AneeshPho;
+		display: flex;
+		align-self: center;
+		
+	}
+	
+	#AneeshPho img {
+		
+		object-fit: cover;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
 	}
 	
 	#AneeshPara {
+		color: white;	
 		grid-area: AneeshPara;
+		display: flex;
+		align-self: center;
+		justify-content: center;
 	}
 	
 }
