@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
 @supports (grid-area: auto) {
 	body {
 		background-color: rgb(238, 227, 210);
@@ -8,7 +11,7 @@
         grid-template-areas: 
             "title title"
             "tab game"
-            "dots ."
+            "dotspho dotspho"
             "dotspho dotspho"
             "howto ."
             "play play";
@@ -64,22 +67,30 @@
         text-decoration: none;
         cursor: pointer;
     }
+
     #dot {
-        grid-area: dots;
-        background-color: rgb(156, 139, 114);
-        border-radius: 15px;
-        display: flex;
+        grid-area: dotspho;
         align-self: center;
-        justify-content: center;
-        position: relative;
-        left: 250px;
     }
 
     #dot h1{
-        font-size: 50px;
-		font-family: Aleo;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+		font-family: Gloria Hallelujah;
 		font-weight: bold;
 		color: white;
+    }
+    #img {
+        grid-area: dotspho;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #img img{
+        height: 320px;
+        border: solid 15px rgb(99, 73, 141);
     }
     #directions {
         grid-area: howto;
@@ -116,34 +127,4 @@
         text-align: center;
     }
 
-    #imgone {
-        grid-area: dotspho;
-    }
-
-    #imgone img{
-        height: 300px;
-        width:300px;
-    }
-
-    #imgtwo {
-        grid-area: dotspho;
-    }
-
-    #imgtwo img{
-        height: 300px;
-        width:300px;
-        position: relative;
-        left: 400px;
-    }
-
-    #imgthree {
-        grid-area: dotspho;
-    }
-
-    #imgthree img{
-        height: 300px;
-        width:300px;
-        position: relative;
-        left: 800px;
-    }
 }
