@@ -2,7 +2,8 @@
 const AREA = document.body;
 var defaultLength = 75;
 var CIRCLE = document.querySelector('.circle');
-
+var DOTS = document.getElementById('.play-but');
+DOTS.style.color = randomColor();
 
 var circleSize = defaultLength;
 var clickCount = 0;
@@ -35,10 +36,11 @@ function mainMenu() {
 /**
  * Click handlers for the different menu screens
  */
-document.querySelectorAll('.play')[0].addEventListener('click', function() {
-  hide(main);
-  positionCircle();
-}, false);
+function startGame() {
+    hide(main);
+    positionCircle();
+}
+document.querySelectorAll('.play')[0].addEventListener('click', startGame, false);
 
 /**
  * Click handlers for the game over
