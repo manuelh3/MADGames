@@ -1,2 +1,2 @@
-# mad-game-site
+# MADGames
 Game Website
