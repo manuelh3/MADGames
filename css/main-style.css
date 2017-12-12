@@ -1,13 +1,13 @@
 @supports (grid-area: auto) {
 	body {
-		background-color: rgb(94, 93, 93);
+		background-color: rgb(238, 227, 210);
 		display: grid;
 		grid-template-columns: 500px 500px;
-        grid-template-rows: 200px 50px 100px 200px 50px 300px;
+        grid-template-rows: 200px 50px 150px 200px 150px 150px;
         justify-content: center;
         grid-template-areas: 
             "title title"
-            "tab ."
+            "tab game"
             "dots ."
             "dotspho dotspho"
             "howto ."
@@ -16,7 +16,7 @@
     }
     #madgames {
 		grid-area: title;
-		background-color: rgb(138, 76, 236);
+		background-color: rgb(99, 73, 141);                  
 		display: flex;
     	align-items: center;
     	justify-content: center;
@@ -31,43 +31,48 @@
 		
     }
 
-    #tabs {
+    #aboutme {
         grid-area: tab;
-        display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-areas: 
-            "about game"
+    
     }
 
-    #about-me {
+    #aboutme a {
+        
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        border: 3px solid black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #gme {
+        grid-area: game;
+   
+    }
+
+    #gme a{
         grid-area: about;
         background-color: white;
         border-radius: 15px;
         display: flex;
         align-self: center;
         justify-content: center;
+        border: 3px solid black;
+        text-decoration: none;
+        cursor: pointer;
     }
-
-    #about-me a {
-        color: Black;
-    }
-
-    #game-bruh {
-        grid-area: game;
-        background-color: white;
-        border-radius: 15px;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-
     #dot {
         grid-area: dots;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(156, 139, 114);
         border-radius: 15px;
         display: flex;
         align-self: center;
         justify-content: center;
+        position: relative;
+        left: 250px;
     }
 
     #dot h1{
@@ -78,11 +83,13 @@
     }
     #directions {
         grid-area: howto;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(156, 139, 114);
         border-radius: 15px;
         display: flex;
         align-self: center;
         justify-content: center;
+        position: relative;
+        left: 250px;
     }
     #directions h1 {
         font-size: 50px;
@@ -92,7 +99,6 @@
     }
     #howtoplay {
         grid-area: play;
-        background-color: rgb(0, 0, 0);
         border-radius: 15px;
         display: flex;
         align-self: center;
@@ -102,6 +108,7 @@
         font-size: 25px;
 		font-family: Aleo;
 		font-weight: bold;
-		color: white; 
+        color: black; 
+        text-align: center;
     }
 }
