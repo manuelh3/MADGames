@@ -28,11 +28,17 @@ function positionCircle(e) {
 }
 
 function shrinkCircle() {
-    circleSize -= 1 + (clickCount * 0.0001);
+    circleSize -= 1 + (clickCount * 0.00001);
     CIRCLE.style.height = circleSize + 'px';
     CIRCLE.style.width = circleSize + 'px';
     console.log("working");
 }
 
-CIRCLE.addEventListener('click', positionCircle, false);
-CIRCLE.addEventListener('click', function(){ clickCount += 1; console.log(clickCount) }, false);
+positionCircle();
+
+while (circleSize > 0) {
+    CIRCLE.addEventListener('click', positionCircle, false);
+    CIRCLE.addEventListener('click', function(){ clickCount += 1; console.log(clickCount) }, false);
+}
+
+window.location.href = "../html/game-end.html";
