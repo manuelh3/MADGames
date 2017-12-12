@@ -1,7 +1,7 @@
 
 @supports (grid-area: auto) {
 	body {
-		background-color: rgb(181, 214, 255);
+		background-color: rgb(238, 227, 210);
 		display: grid;
 		grid-template-columns: 1fr 1000px 1fr;
 		grid-template-areas: 
@@ -30,7 +30,7 @@
 
 	#heading {
 		grid-area: head;
-		background-color: rgb(94, 166, 255);
+		background-color: rgb(99, 73, 141);
 		display: flex;
     	align-items: center;
     	justify-content: center;
@@ -42,15 +42,20 @@
 		font-family: Aleo;
 		font-weight: bold;
 		color: white;
+		font-family: "Trebuchet MS";
+		
 		
 	}
 	
 	#Manuel {
-		color: white;	
+	 	color: black;
 		grid-area: Manuel;
 		display: flex;
 		align-self: center;
 		justify-content: center;
+		position: relative;
+		left: 100px;
+		top: 50px;
 	}
 	
 	#ManuelPho {
@@ -72,22 +77,28 @@
 		display: flex;
 		align-self: center;
 		justify-content: center;
-
 	}
 
 	#ManuelPara p {
-		color: white;
+		color: black;
 		display: flex;
-    	align-items: center;
-    	justify-content: center;
+    align-items: center;
+    justify-content: center;
+		font-size: 23px;
+		font-family: "Times New Roman";
+		text-align: center;
+		
 	}
 	
 	#Dylan {
-		color: white;	
+		color: black;	
 		grid-area: Dylan;
 		display: flex;
 		align-self: center;
 		justify-content: center;
+		position: relative;
+		left: 100px;
+		top: 50px;
 	}
 	
 	#DylanPho {
@@ -105,25 +116,31 @@
 	}
 
 	#DylanPara {
-		color: white;	
+		color: black;	
 		grid-area: DylanPara;
 		display: flex;
 		align-self: center;
 		justify-content: center;
+		font-size: 23px;
+		text-align: center;
 	}
 	
 	#Aneesh {
-		color: white;	
+		color: black;	
 		grid-area: Aneesh;
 		display: flex;
 		align-self: center;
 		justify-content: center;
+		position: relative;
+		left: 100px;
+		top: 50px;
 	}
 	
 	#AneeshPho{
 		grid-area: AneeshPho;
 		display: flex;
 		align-self: center;
+	
 		
 	}
 	
@@ -131,16 +148,18 @@
 		
 		object-fit: cover;
 		width: 250px;
-		height: 250px;
+		height: 300px;
 		border-radius: 50%;
 	}
 	
 	#AneeshPara {
-		color: white;	
+		color: black;	
 		grid-area: AneeshPara;
 		display: flex;
 		align-self: center;
 		justify-content: center;
+		font-size: 23px;
+		text-align: center;
 	}
 	
 }
