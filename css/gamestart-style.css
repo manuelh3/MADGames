@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 @supports(grid-area: auto){
+    body {
+        display: grid;
+        background-color: black;
+        grid-template-rows: 125px 125px;
+        grid-template-areas: 
+        "title"
+        "button"
+    }
 
-    
+    #ttl {
+        grid-area: title;
+    }
+   
+    #ttl h1 {
+        font-size: 250px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-family: "Architects Daughter";
+        color: blueviolet;
+    }
+
+    #playbutton {
+        grid-area: button;
+    }
+
+    #playbutton a{
+        font-size: 40px;
+        font-family: "Architects Daughter";
+        color: white;
+        font-weight: bold;
+        position: relative;
+        left: 770px;
+        text-decoration: none;
+        top: 390px;
+        color:cadetblue
+    }
+
 }
