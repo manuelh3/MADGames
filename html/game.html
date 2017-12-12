@@ -4,14 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>An empty page</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+    <title>Dots: The Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js" async></script>
     <script src="../js/game.js" async></script>
     <link href="../css/game.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="circle"></div>
+    <div id="active-score">+ </div>
+    <div id="menu" class="main">
+        <div id="main">
+            <h1>Dots!</h1>
+            <ul>
+                <li><a href="#" class="button play">Play!</a></li>
+                <li><a href="#" class="button credits">Credits</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="game-over">
+        <h2>That all you got!?</h2>
+        <a href="javascript:void(0)" class="button restart">Try again?</a>
+    </div>
+    <div id="score"></div>
 </body>
 
 </html>
