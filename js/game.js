@@ -29,6 +29,9 @@ function positionCircle(e) {
 
 function shrinkCircle() {
     circleSize -= 1 + (clickCount * 0.00001);
+    if (circleSize < 0) {
+        window.location.href = "../html/game-end.html";
+    }
     CIRCLE.style.height = circleSize + 'px';
     CIRCLE.style.width = circleSize + 'px';
     console.log("working");
@@ -36,9 +39,5 @@ function shrinkCircle() {
 
 positionCircle();
 
-while (circleSize > 0) {
-    CIRCLE.addEventListener('click', positionCircle, false);
-    CIRCLE.addEventListener('click', function(){ clickCount += 1; console.log(clickCount) }, false);
-}
-
-window.location.href = "../html/game-end.html";
+CIRCLE.addEventListener('click', positionCircle, false);
+CIRCLE.addEventListener('click', function(){ clickCount += 1; console.log(clickCount) }, false);
