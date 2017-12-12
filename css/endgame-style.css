@@ -1,0 +1,72 @@
+@supports(grid-area: auto){
+    body{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 125px 125px 125px;
+        background-color: rgb(243, 223, 189);
+        justify-content: center;
+        grid-template-areas: 
+        "tab tab"
+        "number number"
+        "play home"
+    }
+
+    #gametitle {
+        grid-area: tab;
+    }
+
+    #gametitle h1 {
+        font-size: 100px;
+        font-family: Arial;
+        font-weight: bold;
+        text-align: center;
+        color: blue;
+    }
+
+    #playtab {
+        grid-area: play;
+    }
+
+    #playtab a{
+        font-size: 35px;
+        font-family: Arial;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        left: 150px;
+        top: 250px;
+        color:black;
+    }
+
+    #hometab {
+        grid-area: home;
+    }
+
+    #hometab a{
+        font-size: 35px;
+        font-family: Arial;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+         position: relative;
+        left: 230px;
+        top: 250px;
+        color:black;
+    }
+
+    #numero {
+        grid-area:number;
+    }
+
+    #numero h1 {
+        font-size: 35px;
+        font-family: Arial;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+         position: relative;
+        top: 130px;
+        color:black;
+    }
+}
