@@ -90,12 +90,14 @@
         justify-content: center;
         position: relative;
         left: 250px;
+        top:50px;
     }
     #directions h1 {
         font-size: 50px;
 		font-family: Aleo;
 		font-weight: bold;
 		color: white; 
+        
     }
     #howtoplay {
         grid-area: play;
@@ -103,6 +105,8 @@
         display: flex;
         align-self: center;
         justify-content: center;
+        position: relative;
+        top: 50px;
     }
     #howtoplay p{
         font-size: 25px;
@@ -110,5 +114,36 @@
 		font-weight: bold;
         color: black; 
         text-align: center;
+    }
+
+    #imgone {
+        grid-area: dotspho;
+    }
+
+    #imgone img{
+        height: 300px;
+        width:300px;
+    }
+
+    #imgtwo {
+        grid-area: dotspho;
+    }
+
+    #imgtwo img{
+        height: 300px;
+        width:300px;
+        position: relative;
+        left: 400px;
+    }
+
+    #imgthree {
+        grid-area: dotspho;
+    }
+
+    #imgthree img{
+        height: 300px;
+        width:300px;
+        position: relative;
+        left: 800px;
     }
 }
