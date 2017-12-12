@@ -31,6 +31,7 @@ function shrinkCircle() {
     circleSize -= 1 + (clickCount * 0.00001);
     if (circleSize < 0) {
         window.location.href = "../html/game-end.html";
+        localStorage.setItem("clicks", clickCount);
     }
     CIRCLE.style.height = circleSize + 'px';
     CIRCLE.style.width = circleSize + 'px';
