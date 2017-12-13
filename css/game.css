@@ -11,3 +11,7 @@ body {
     background-color: orange;
     border-radius: 50%;
 }
+
+.is-ios * {
+    cursor: pointer;
+}
