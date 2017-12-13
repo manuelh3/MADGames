@@ -24,7 +24,9 @@ function positionCircle(e) {
     CIRCLE.style.backgroundColor = newColor;
     CIRCLE.style.left = horizontalPosition + 'px';
     CIRCLE.style.top = verticalPosition + 'px';
-    setInterval(shrinkCircle, 100);
+    do {
+        setInterval(shrinkCircle, 100);
+    } while (circleSize < 0)
 }
 
 function shrinkCircle() {
