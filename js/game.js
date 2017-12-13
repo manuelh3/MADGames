@@ -1,4 +1,3 @@
-
 const AREA = document.body;
 var defaultLength = 75;
 var CIRCLE = document.querySelector('.circle');
