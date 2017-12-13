@@ -30,7 +30,7 @@ function positionCircle(e) {
 function shrinkCircle() {
     circleSize -= .3 + ((Math.log10(clickCount)) / 1000000);
     if (circleSize < 0) {
-        window.location.href = "../html/game-end.html";
+        location.href = "../html/game-end.html";
         localStorage.setItem("clicks", clickCount);
     }
     CIRCLE.style.height = circleSize + 'px';
