@@ -13,10 +13,6 @@ var windowHeight = window.innerHeight - (circleSize + 2);
 var win = false;
 var lose = false;
 
-if (gravdept.isIos()) {
-    document.querySelector('html').classList.add('is-ios');
-}
-
 function positionCircle(e) {
     var horizontalPosition = (windowWidth * Math.random()) + 1;
     var verticalPosition= (windowHeight * Math.random()) + 1;
