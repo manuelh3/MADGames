@@ -16,7 +16,7 @@
 		justify-content: center;
 		grid-template-areas: 
 			"head head head"
-			". . ."
+			"tab tab tab"
 			". . ."
 			"Manuel Manuel Manuel"
 			"ManuelPho . ManuelPara"
@@ -47,6 +47,54 @@
 		
 	}
 	
+	#tabs {
+		grid-area: tab;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 
+			"home game";
+	}
+
+	#home {
+        grid-area: home;
+    
+    }
+
+    #home a {
+        
+        background-color: white;
+        color: Black;
+        font-size: 25px;
+        font-family: "Trebuchet MS";
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        border: 3px solid black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #gme {
+        grid-area: game;
+   
+    }
+
+    #gme a{
+        grid-area: about;
+        color: Black;
+        font-size: 25px;
+        font-family: "Trebuchet MS";
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        border: 3px solid black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 	#Manuel {
 	 	color: black;
 		grid-area: Manuel;

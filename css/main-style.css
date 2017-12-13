@@ -42,6 +42,9 @@
     #aboutme a {
         
         background-color: white;
+        color: Black;
+        font-size: 25px;
+        font-family: "Trebuchet MS";
         border-radius: 15px;
         display: flex;
         align-self: center;
@@ -58,6 +61,9 @@
 
     #gme a{
         grid-area: about;
+        color: Black;
+        font-size: 25px;
+        font-family: "Trebuchet MS";
         background-color: white;
         border-radius: 15px;
         display: flex;
